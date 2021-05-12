@@ -1,0 +1,161 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+body {
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  margin: 0;
+}
+
+.image img {
+  max-width: 100%;
+}
+
+.card {
+  min-width: 250px;
+  max-width: 310px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  color: #2b2b2b;
+}
+
+.card * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+figcaption {
+  padding: 10%;
+  padding-bottom: calc(5%);
+}
+
+h5 {
+  color: red;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Lato;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.27em;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Oswald";
+  font-weight: 400;
+  line-height: 24px;
+  margin: 3px 0;
+}
+
+footer {
+  margin-top: 2.5em;
+  overflow: hidden;
+  width: 100%;
+}
+
+.date {
+  font-family: Lato;
+  font-size: 0.8em;
+  float: left;
+}
+
+.icons {
+  margin-left: 8px;
+  float: right;
+}
+footer .icons > div {
+  margin-left: 8px;
+}
+
+.icons i {
+  margin-right: 5px;
+  font-size: 13px;
+}
+
+.icons div {
+  display: inline-block;
+}
+
+.flexContainer {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.col-md-15 {
+  padding: 20px;
+}
+
+.c2 {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.hijo1 .hijo2 {
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  padding: 20px;
+}
+
+.hijo2{
+  width:550px; /* or whatever width you want. */
+  max-width:700px; /* or whatever width you want. */
+  display: inline-block;
+}
+
+.hijo1{
+  width:550px; /* or whatever width you want. */
+  max-width:450px; /* or whatever width you want. */
+  display: inline-block;  
+}

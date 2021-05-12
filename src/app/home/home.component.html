@@ -1,0 +1,90 @@
+<hr style="margin-top: 0%" />
+<br />
+
+<div class="text-center">
+  <h2 style="font-family: Impact">Página Informativa Fórmula 1® Racing</h2>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-15 text-center">
+      {{ descrip }}
+      <img
+        src="./../../assets/580b585b2edbce24c47b2c8f.png"
+        alt="Car image"
+        width="450"
+        height="270"
+      />
+    </div>
+  </div>
+</div>
+
+<br /><br />
+
+<div class="text-center">
+  <h2 style="font-family: Impact">ÚLTIMAS NOTICIAS</h2>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="flexContainer">
+      <div class="col-md-15" *ngFor="let x of noticias; let i = index">
+        <figure class="card">
+          <div class="image">
+            <img src="{{ noticias[i].img }}" alt="sample101" />
+          </div>
+          <figcaption>
+            <h5>{{ noticias[i].type }}</h5>
+            <h3>{{ noticias[i].descrip }}</h3>
+            <footer>
+              <div class="date">{{ noticias[i].date }}</div>
+              <div class="icons">
+                <div class="views">
+                  <i class="ion-eye"></i>{{ noticias[i].views }}
+                </div>
+                <div class="love">
+                  <i class="ion-heart"></i>{{ noticias[i].heart }}
+                </div>
+              </div>
+            </footer>
+          </figcaption>
+          <a href="#"></a>
+        </figure>
+      </div>
+    </div>
+  </div>
+</div>
+<br /><br />
+
+<div class="text-center">
+  <h2 style="font-family: Impact">Lewis Hamilton</h2>
+</div>
+<div class="c2" style="background-color: rgb(243, 243, 243)">
+  <div class="hijo1">
+    <img class="img-fluid" src="../../assets/Lewis.png" alt="Lewis" />
+  </div>
+  <pre></pre>
+  <div class="hijo2">
+    <p style="margin-top: 20px">
+      {{ bio }}
+    </p>
+  </div>
+</div>
+
+<br><br><br>
+<div class="text-center">
+  <h2 style="font-family: Impact">Max Verstappen</h2>
+</div>
+
+<div class="c2" style="background-color: rgb(243, 243, 243)">
+  <div class="hijo2">
+    <p style="margin-top: 20px">
+      {{ bio2 }}
+    </p>
+    <pre></pre>
+  </div>
+  <div class="hijo1">
+    <img class="img-fluid" src="../../assets/guapo.png" alt="Lewis" />
+  </div>
+</div>
+
+<br><br><br>
